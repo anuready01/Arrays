@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+        String s = "AnushaSajjan";
+        int count = 0;  // To count the total number of vowels in the string
+        
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            // Check if the character is a vowel
+            if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+                ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                count++;
+            }
+        }
+
+        // Print the total count of vowels
+        System.out.println("Total vowels: " + count);
+    }
+}
