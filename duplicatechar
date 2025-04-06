@@ -1,0 +1,24 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+      String s="Ramana";
+      char[] ch=s.toCharArray();
+      for(int i=0;i<ch.length;i++){
+          if(ch[i]=='@')continue;
+          boolean isduplicate=false;
+          for(int j=i+1;j<ch.length;j++){
+              
+              if(ch[i]==ch[j]){
+                  ch[j]='@';
+                  isduplicate=true;
+              }
+          }
+          if(isduplicate) ch[i]='@';
+      }
+      for(char c:ch){
+          System.out.print(c);
+      }
+    }
+}
